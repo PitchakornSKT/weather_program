@@ -44,10 +44,9 @@ function fetchWeatherData(location) {
             dateTime.textContent = formatDateTime(new Date());
             temperature.textContent = `${Math.round(data.main.temp)}°C`;
             description.textContent = data.weather[0].description;
-            humidity.textContent = `Humidity: ${data.main.humidity}%`;
-            wind.textContent = `Wind: ${data.wind.speed} km/h`;
+            humidity.textContent = `Humidity ${data.main.humidity}%`;
+            wind.textContent = `Wind ${data.wind.speed} km/h`;
 
-            // Set weather icon
             const iconCode = data.weather[0].icon;
             document.querySelector('.weather-icon').src = `images/${iconMapping[iconCode]}`;
             document.querySelector('.weather-icon').alt = data.weather[0].description;
@@ -83,13 +82,12 @@ function fetchForecastData(location) {
                 forecastElement.querySelector('.temp').textContent = `${forecastDays[day].temp}°C`;
                 forecastElement.querySelector('.desc').textContent = forecastDays[day].desc;
                 
-                // Set custom weather icon
                 const iconFile = forecastDays[day].icon;
                 forecastElement.querySelector('.weather-forecast-icon').src = `images/${iconFile}`;
                 forecastElement.querySelector('.weather-forecast-icon').alt = forecastDays[day].desc;
 
                 dayIndex++;
-                if (dayIndex > 5) break; // Limit to 5 days
+                if (dayIndex > 5) break;
             }
         })
         .catch(error => console.error('Error fetching forecast data:', error));
