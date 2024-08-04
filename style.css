@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    font-family: 'roboto';
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1b2631;
+    color: #fff;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    margin-top: 10rem;
+    padding: 20px;
+    background: #283747;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin-bottom: 20px;
+}
+
+.header .location-name {
+    text-align: left; 
+    flex-grow: 1; 
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.search-box {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+    margin-bottom: 20px;
+    flex-grow: 0; 
+}
+
+.search-box input {
+    width: 200px; 
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px; 
+}
+
+.search-box button {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.weather-info {
+    text-align: center;
+}
+
+.temperature{
+    font-size: 56px;
+}
+.description{
+    padding-bottom: 30px;
+}
+.icon-detail{
+    display: flex;
+    justify-content: space-around;
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+.details {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+.forecast {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    background: #2e4053;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.weather-forecast-icon{
+    width: 80px;
+    padding: 15px;
+}
+
+.day {
+    text-align: center;
+}
+
+.desc{
+    color: #ccc;
+}
+
+.weather-icon{
+    padding: 10px;
+    width: 130px;
+}

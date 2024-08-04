@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="location-info">
+                <div class="location-name">Name</div>
+                <div class="date-time">Date</div>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Enter Your Location">
+                <button class="bx bx-search"></button>
+            </div>
+        </div>
+        <div class="weather-info">
+            <img class="weather-icon" src="images/rain.png" alt="Weather Icon">
+            <div class="temperature">Temperature</div>
+            <div class="description">Weather Description</div>
+            <div class="icon-detail">
+                <i class='bx bx-water'></i>
+                <i class='bx bx-wind'></i>
+            </div>
+            <div class="details">
+                <div class="humidity"></div>
+                <div class="wind"></div>
+            </div>
+        </div>
+        <div class="forecast">
+            <div class="day" id="day1">
+                <div class="date">Date 1</div>
+                <img class="weather-forecast-icon" src="images/rain.png" alt="Weather Icon">
+                <div class="temp">Temp 1</div>
+                <div class="desc">Description 1</div>
+            </div>
+            <div class="day" id="day2">
+                <div class="date">Date 2</div>
+                <img class="weather-forecast-icon" src="images/rain.png" alt="Weather Icon">
+                <div class="temp">Temp 2</div>
+                <div class="desc">Description 2</div>
+            </div>
+            <div class="day" id="day3">
+                <div class="date">Date 3</div>
+                <img class="weather-forecast-icon" src="images/rain.png" alt="Weather Icon">
+                <div class="temp">Temp 3</div>
+                <div class="desc">Description 3</div>
+            </div>
+            <div class="day" id="day4">
+                <div class="date">Date 4</div>
+                <img class="weather-forecast-icon" src="images/rain.png" alt="Weather Icon">
+                <div class="temp">Temp 4</div>
+                <div class="desc">Description 4</div>
+            </div>
+            <div class="day" id="day5">
+                <div class="date">Date 5</div>
+                <img class="weather-forecast-icon" src="images/rain.png" alt="Weather Icon">
+                <div class="temp">Temp 5</div>
+                <div class="desc">Description 5</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
